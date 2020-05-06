@@ -1,0 +1,163 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+
+.div-container{
+    background-image: url(./assets/Jogo\ da\ Velha.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: rgb(248, 59, 11);
+    width: 10%;
+    height: 325px;
+    opacity: 80%;
+    position: absolute;
+    left:50px;
+    top: 200px;
+    border-radius: 30px;
+    padding: 10px;
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    
+}
+
+.header select{
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: rgb(88, 86, 116);
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    text-align: center;
+
+}
+
+.header button{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 8px;
+    background-color: rgb(88, 86, 116);
+    color: white;
+    border-style: none;
+}
+.header button:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: .7s;
+}
+
+
+.header img{
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+
+.table{
+    background-color: rgb(88, 86, 116);
+    
+    opacity: 95%;
+    width: 40%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 20% 20% 20%;
+    column-gap: 0px;
+    row-gap: 4px;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    left:220px;
+    top: 170px;
+    border-radius: 30px;
+    border-style: ridge;
+}
+
+.cel{
+    color: white;
+    background-color:black;
+    width: 100px;
+    margin: 0px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+}
+
+#x {
+    width: 40%;
+    height: 400px;
+    background-image: url(./assets/xwins.gif);
+    background-size: cover;
+    background-position: -100px;
+    z-index: 2;
+    color: blanchedalmond;
+    position: absolute;
+    left:220px;
+    top: 170px;
+    border-radius: 30px;
+    display: none;
+    
+}
+#o {
+    width: 40%;
+    height: 400px;
+    background-image: url(./assets/owins.gif);
+    background-size: cover;
+    background-position: -120px;
+    z-index: 2;
+    color: blanchedalmond;
+    position: absolute;
+    left:220px;
+    top: 170px;
+    border-radius: 30px;
+    display: none;
+    
+}
+#draw {
+    width: 40%;
+    height: 400px;
+    background-image: url(./assets/draw.gif);
+    background-size: cover;
+    background-position-y: -32px;
+    z-index: 2;
+    color: blanchedalmond;
+    position: absolute;
+    left:220px;
+    top: 170px;
+    border-radius: 30px;
+    display: none;
+
+    
+}
+
+#turn {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    background-color:yellowgreen;
+    border-radius: 8px;
+}

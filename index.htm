@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css">
+        
+        <title>Jogo da Velha by Vinicius Luz</title>
+    </head>
+    <body>
+        <div class='div-container'>
+            <div class="header">
+                <p>Turn:</p>
+                <p id='turn'> </p>
+               
+                <select id='gameMode'>
+                    <option value="0">Game Mode:</option>
+                    <option value="1">Player vs Player</option>
+                    <option value="2">Player vs CPU - EASY</option>
+                </select>
+                
+                <button onclick="restart()">Restart Game</button>
+                <img src="./assets/old-lady-icon-68.png" alt="jogo-da-velha">
+            </div>
+            <div class="table">
+                <div class="cel" id='00' onclick="jogadaComp(00)" ></div>
+                <div class="cel" id='01' onclick="jogadaComp(01)" ></div>
+                <div class="cel" id='02' onclick="jogadaComp(02)" ></div>
+
+                <div class="cel" id='10' onclick="jogadaComp(10)" ></div>
+                <div class="cel" id='11' onclick="jogadaComp(11)" ></div>
+                <div class="cel" id='12' onclick="jogadaComp(12)" ></div>
+
+                <div class="cel" id='20' onclick="jogadaComp(20)" ></div>
+                <div class="cel" id='21' onclick="jogadaComp(21)" ></div>
+                <div class="cel" id='22' onclick="jogadaComp(22)" ></div>
+            </div>
+        </div>
+        <div class='pop-up' id='x'>
+            
+        </div>
+        <div class='pop-up' id='o'>
+            
+        </div>
+        <div class='pop-up' id='draw'>
+            
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
